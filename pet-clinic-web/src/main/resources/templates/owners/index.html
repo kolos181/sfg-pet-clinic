@@ -8,6 +8,21 @@
     <title>Owners page</title>
 </head>
 <body>
-<h1 th:text="'Owners page'">This is owners page</h1>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>First name</th>
+        <th>Last name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="owner :${owners}">
+        <td th:text="${owner.id}">you</td>
+        <td th:text="${owner.firstName}">shouldn't</td>
+        <td th:text="${owner.lastName}">see me</td>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>
