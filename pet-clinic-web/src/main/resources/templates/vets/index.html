@@ -5,6 +5,23 @@
     <title>Vets Page</title>
 </head>
 <body>
-<h1 th:text="'Vets page'">Vets page...</h1>
+
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>First name</th>
+        <th>Last name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="vet :${vets}">
+        <td th:text="${vet.id}">you</td>
+        <td th:text="${vet.firstName}">shouldn't</td>
+        <td th:text="${vet.lastName}">see me</td>
+    </tr>
+    </tbody>
+</table>
+
 </body>
 </html>
