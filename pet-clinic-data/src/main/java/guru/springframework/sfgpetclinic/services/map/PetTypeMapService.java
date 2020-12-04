@@ -7,5 +7,4 @@ import org.springframework.stereotype.Service;
 @Service
 public class PetTypeMapService extends AbstractMapService<PetType, Long> implements PetTypeService {
 
-
 }
